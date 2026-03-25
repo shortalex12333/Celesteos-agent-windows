@@ -1,0 +1,28 @@
+# CelesteOS Local Agent Dependencies
+# Lightweight, local-only text extraction (NO cloud AI libraries)
+
+# PDF extraction (lightweight ~8MB)
+PyMuPDF==1.23.8
+
+# DOCX extraction
+python-docx==1.1.0
+
+# XLSX extraction
+openpyxl==3.1.2
+
+# File system watching
+watchdog==3.0.0
+
+# HTTP requests for uploading
+requests==2.31.0
+
+# Installer GUI (native window with embedded HTML)
+pywebview==6.1
+
+# macOS menu bar status icon
+rumps==0.4.0
+
+# No embedding libraries - done in cloud!
+# No numpy - not needed
+# No PIL - not needed
+# No psycopg2 - using REST API

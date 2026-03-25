@@ -1,0 +1,25 @@
+# CelesteOS Local Agent — Shared Dependencies (all platforms)
+
+# PDF extraction (lightweight ~8MB)
+PyMuPDF==1.23.8
+
+# DOCX extraction
+python-docx==1.1.0
+
+# XLSX extraction
+openpyxl==3.1.2
+
+# File system watching (FSEvents on macOS, ReadDirectoryChangesW on Windows)
+watchdog==3.0.0
+
+# HTTP requests for uploading
+requests==2.31.0
+
+# Installer GUI (native window with embedded HTML)
+pywebview==6.1
+
+# Recovery key encryption
+cryptography>=41.0.0
+
+# Credential storage (Windows Credential Manager, macOS Keychain fallback)
+keyring>=25.0.0

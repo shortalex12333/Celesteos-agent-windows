@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.env
+.env.local
+*.egg-info/
+dist/
+/build/
+.venv/
+venv/
+*.dmg
+*.db
+*.db-shm
+*.db-wal
+~/.celesteos/
+output/

@@ -1,0 +1,11 @@
+# CelesteOS Local Agent — Windows-specific dependencies
+-r requirements-common.txt
+
+# Windows system tray icon
+pystray>=0.19.5
+
+# Icon rendering for pystray
+Pillow>=10.0.0
+
+# Windows toast notifications
+plyer>=2.1.0

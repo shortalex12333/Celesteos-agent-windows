@@ -1,0 +1,10 @@
+{
+  "yacht_id": "M_Y_FIRST_REAL_BUILD_1764074692",
+  "yacht_id_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "yacht_name": "Test Yacht",
+  "api_endpoint": "https://qvzmkaamzaqxpzbewjxe.supabase.co",
+  "n8n_endpoint": "https://n8n.example.com",
+  "version": "1.0.0",
+  "build_timestamp": 1700000000,
+  "bundle_id": "com.celesteos.agent"
+}

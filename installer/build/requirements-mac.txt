@@ -1,0 +1,5 @@
+# CelesteOS Local Agent — macOS-specific dependencies
+-r requirements-common.txt
+
+# macOS menu bar status icon
+rumps==0.4.0
