@@ -85,7 +85,7 @@ class EXEBuilder:
             shutil.copy2(self.installer_path, final_path)
             self.installer_path = final_path
 
-            print(f"\n✓ Build complete: {final_path}")
+            print(f"\n[OK] Build complete: {final_path}")
             return final_path
 
         finally:
@@ -372,7 +372,7 @@ if __name__ == '__main__':
         )
 
         print(f"\n{'='*60}")
-        print(f"✓ Build Complete!")
+        print(f"[OK] Build Complete!")
         print(f"{'='*60}")
         print(f"Installer: {exe_path}")
         print(f"\nNext steps:")
@@ -382,7 +382,7 @@ if __name__ == '__main__':
         print(f"  4. Select NAS folder, sync starts")
 
     except BuildError as e:
-        print(f"\n✗ Build failed: {e}")
+        print(f"\n[FAIL] Build failed: {e}")
         sys.exit(1)
     except KeyboardInterrupt:
         print("\n\nBuild interrupted")
