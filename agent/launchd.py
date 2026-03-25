@@ -10,7 +10,7 @@ import os
 import subprocess
 from pathlib import Path
 
-from .platform_mac import get_config_dir
+from .platform import get_config_dir
 
 logger = logging.getLogger("agent.launchd")
 
