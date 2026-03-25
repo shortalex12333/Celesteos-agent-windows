@@ -32,6 +32,8 @@ STATUS_HTML = """\
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CelesteOS</title>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
@@ -46,17 +48,17 @@ STATUS_HTML = """\
     --teal-bg: rgba(58,124,157,0.12);
     --mark-hover: rgba(58,124,157,0.22);
     --border: rgba(255,255,255,0.07);
-    --border-bright: rgba(255,255,255,0.10);
+    --border-bright: rgba(255,255,255,0.11);
     --txt: rgba(255,255,255,0.92);
     --txt2: rgba(255,255,255,0.55);
-    --txt3: rgba(255,255,255,0.38);
-    --txt-ghost: rgba(255,255,255,0.20);
+    --txt3: rgba(255,255,255,0.70);
+    --txt-ghost: rgba(255,255,255,0.40);
     --red: #C0503A;
     --green: #4A9468;
     --amber: #C4893B;
     --blue: #5B8DEF;
     --mono: 'SF Mono', ui-monospace, 'Fira Code', monospace;
-    --sans: -apple-system, BlinkMacSystemFont, system-ui, 'Segoe UI', Roboto, sans-serif;
+    --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
     /* Shadows */
     --shadow-tip: 0 4px 12px rgba(0,0,0,0.40);
     --shadow-drop: 0 8px 24px rgba(0,0,0,0.50);
