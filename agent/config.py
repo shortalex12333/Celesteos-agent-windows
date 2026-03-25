@@ -70,8 +70,9 @@ def _get_keychain_password(service: str, account: str) -> str:
         return pw
 
     # Fallback: recovery key file — ONLY for the HMAC shared_secret,
-    # not for Supabase keys or other credentials
-    if service == "com.celeste7.celesteos":
+    # not for Supabase keys or other credentials.
+    # The shared_secret account is the yacht_id (a UUID), never "SUPABASE_SERVICE_KEY".
+    if service == "com.celeste7.celesteos" and account != "SUPABASE_SERVICE_KEY":
         recovery_path = get_config_dir() / ".recovery_key"
         if recovery_path.exists():
             try:
