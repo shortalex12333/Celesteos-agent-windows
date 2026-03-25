@@ -10,12 +10,14 @@ import os
 import subprocess
 from pathlib import Path
 
+from .platform_mac import get_config_dir
+
 logger = logging.getLogger("agent.launchd")
 
 LABEL = "com.celeste7.celesteos.agent"
 PLIST_DIR = Path.home() / "Library" / "LaunchAgents"
 PLIST_PATH = PLIST_DIR / f"{LABEL}.plist"
-LOG_DIR = Path.home() / ".celesteos" / "logs"
+LOG_DIR = get_config_dir() / "logs"
 
 
 def _is_production() -> bool:
@@ -74,7 +76,7 @@ def _build_plist() -> str:
     <key>StandardErrorPath</key>
     <string>{log_err}</string>
     <key>WorkingDirectory</key>
-    <string>{Path.home() / ".celesteos"}</string>
+    <string>{get_config_dir()}</string>
     <key>ThrottleInterval</key>
     <integer>30</integer>
 </dict>
